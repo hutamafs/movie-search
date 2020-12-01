@@ -29,8 +29,7 @@ const Home = () => {
         if(!num) {
             num = 1
         }
-
-        axios(`http://www.omdbapi.com/?apikey=faf7e5bb&s=${title}&page=${num}`)
+        axios(`https://www.omdbapi.com/?apikey=faf7e5bb&s=${title}&page=${num}`)
         .then(({data}) => {
             if(data.Error) {
                 Toast.fire({

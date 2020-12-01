@@ -12,7 +12,7 @@ const Detail = () => {
     const [movie,setMovie] = useState(null);
 
     useEffect(() => {
-        axios(` http://www.omdbapi.com/?i=${id}&plot=full&apikey=faf7e5bb`)
+        axios(`https://www.omdbapi.com/?i=${id}&plot=full&apikey=faf7e5bb`)
         .then(({data}) => {
             setMovie(data)
         })
